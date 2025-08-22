@@ -71,6 +71,7 @@ usvg = { workspace = true }
 utf8_iter = { workspace = true }
 wasmi = { workspace = true }
 xmlwriter = { workspace = true }
+rusqlite = { workspace = true }
 
 [dev-dependencies]
 typst-dev-assets = { workspace = true }

@@ -8,6 +8,8 @@ mod csv_;
 mod json_;
 #[path = "read.rs"]
 mod read_;
+#[path = "sql.rs"]
+mod sql_;
 #[path = "toml.rs"]
 mod toml_;
 #[path = "xml.rs"]
@@ -23,6 +25,7 @@ pub use self::cbor_::*;
 pub use self::csv_::*;
 pub use self::json_::*;
 pub use self::read_::*;
+pub use self::sql_::*;
 pub use self::toml_::*;
 pub use self::xml_::*;
 pub use self::yaml_::*;
@@ -38,6 +41,7 @@ pub(super) fn define(global: &mut Scope) {
     global.define_func::<read>();
     global.define_func::<csv>();
     global.define_func::<json>();
+    global.define_func::<sql>();
     global.define_func::<toml>();
     global.define_func::<yaml>();
     global.define_func::<cbor>();
